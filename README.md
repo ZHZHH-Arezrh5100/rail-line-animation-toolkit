@@ -48,8 +48,6 @@
 5. **生成视频**<br>
 用AE打开"[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)"，运行脚本"[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"以生成视频。
 
-## 文件说明
-
 ## 注意
 * 使用脚本前先看代码，可能要根据需要做一些更改。
 * "[resources/icons/](/resources/icons)"中的列车车型图标下载自[Train Front View](http://www.trainfrontview.net)（或经过少许修改）。图标的版权归属于[Train Front View](http://www.trainfrontview.net)。如果要发布包含图标的视频，请先看这个网站上的要求。
