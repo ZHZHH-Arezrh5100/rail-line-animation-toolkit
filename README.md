@@ -61,5 +61,5 @@ Open "[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)" in After 
 
 ## Notice <br>注意
 * Read the script code before using it. Some minor changes might be necessary for other railway lines. <br>使用脚本前先看代码，可能要根据需要做一些更改。
-* The train icons in "[resources/icons/](/resources/icons)" is downloaded from [Train Front View](http://www.trainfrontview.net/en/index.htm) (or with some minor changes). The copyright of the icons are owned by [Train Front View](http://www.trainfrontview.net/en/index.htm). Please check the website if you want to publish the icons. <br>
+* The train icons in "[resources/icons/](/resources/icons)" is downloaded from [Train Front View](http://www.trainfrontview.net/en/index.htm) (or with some minor changes). The copyright of the icons are owned by [Train Front View](http://www.trainfrontview.net/en/index.htm). Please check the website if you want to publish the video with the icons. <br>
 "[resources/icons/](/resources/icons)"中的列车车型图标下载自[Train Front View](http://www.trainfrontview.net)（或经过少许修改）。图标的版权归属于[Train Front View](http://www.trainfrontview.net)。如果要发布包含图标的视频，请先看这个网站上的要求。
