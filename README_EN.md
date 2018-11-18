@@ -36,7 +36,7 @@ The first step is to prepare the schedule files, which includes all information 
    outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
    ```
    **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.**<br>
-4. **Modify the schedule data manually **<br>
+4. **Modify the schedule data manually**<br>
 The data got by query_schedule_12306.py does not include some information such as track, train model type... These information can only be added manually. Some necessary modification is listed below.<br>
     * Add way points (where the line turns, or the end point at the edge of the map).
     * For the trains which have more than one train name, split them to two or more trains.
