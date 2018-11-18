@@ -2,13 +2,13 @@
 Automatic train animation generator <br>铁路运行略图自动生成工具
 
 ## Introduction <br>简介
-This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) here is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.
-本工具用于制作铁路/轨道交通运行略图。运行略图是一种展现列车以图标的形式，按照时刻表，在线路简图上动态运行的视频。运行略图的截图如下图所示。
+This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) here is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
+本工具用于制作铁路/轨道交通运行略图。运行略图是一种展现列车以图标的形式，按照时刻表，在线路简图上动态运行的视频。运行略图的截图如下图所示。<br>
 
-This is a Rail Line Animation video: [(Not uploaded yet av00000000](https://www.bilibili.com/video/av0)
-动态运行略图视频可以参照视频：[（尚未上传）av00000000](https://www.bilibili.com/video/av0)
-This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.
-本工具提供了使用Adobe After Effects CC自动生成这种运行略图动画的脚本。脚本运行所需的时刻数据可以用Python脚本从12306上获取。
+This is a Rail Line Animation video: [(Not uploaded yet av00000000](https://www.bilibili.com/video/av0)<br>
+动态运行略图视频可以参照视频：[（尚未上传）av00000000](https://www.bilibili.com/video/av0)<br>
+This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.<br>
+本工具提供了使用Adobe After Effects CC自动生成这种运行略图动画的脚本。脚本运行所需的时刻数据可以用Python脚本从12306上获取。<br>
 
 ## How To Make a train animation <br>如何使用本工具制作运行略图
 
