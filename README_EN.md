@@ -6,7 +6,7 @@ Automatic train animation generator<br>
 This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a sample Rail Line Animation is shown below.<br>
 ![capture of a sample Rail Line Animation](/capture_sample.jpg)
 Here is a sample Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0) <br>
-**This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.**<br>
+**This toolkit provides a script (Javascript) for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.**<br>
 
 ## How To Make a Train Animation <br>
 1. **Draw a railway line map**<br>
