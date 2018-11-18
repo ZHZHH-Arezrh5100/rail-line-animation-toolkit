@@ -1,8 +1,14 @@
 # Rail Line Animation Toolkits <br>铁路运行略图生成工具
 Automatic train animation generator <br>铁路运行略图自动生成工具
-## Introduction <br>简介
-本工具用于制作铁路/轨道交通运行略图
 
+## Introduction <br>简介
+This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) here is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.
+本工具用于制作铁路/轨道交通运行略图。运行略图是一种展现列车以图标的形式，按照时刻表，在线路简图上动态运行的视频。运行略图的截图如下图所示。
+
+This is a Rail Line Animation video: [(Not uploaded yet av00000000](https://www.bilibili.com/video/av0)
+动态运行略图视频可以参照视频：[（尚未上传）av00000000](https://www.bilibili.com/video/av0)
+This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.
+本工具提供了使用Adobe After Effects CC自动生成这种运行略图动画的脚本。脚本运行所需的时刻数据可以用Python脚本从12306上获取。
 
 ## How To Make a train animation <br>如何使用本工具制作运行略图
 
@@ -50,6 +56,10 @@ The data got by query_schedule_12306.py does not include some information such a
 5. **Generate the video 生成视频**<br>
 Open "[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)" in After Effects, add the background map, and run "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)" to generate the video.<br>
 用AE打开"[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)"，运行脚本"[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"以生成视频。
+
 ## File Description <br>文件说明
 
 ## Notice <br>注意
+* Read the script code before using it. Some minor changes might be necessary for other railway lines. <br>使用脚本前先看代码，可能要根据需要做一些更改。
+* The train icons in "[resources/icons/](/resources/icons)" is downloaded from [Train Front View](http://www.trainfrontview.net/en/index.htm) (or with some minor changes). The copyright of the icons are owned by [Train Front View](http://www.trainfrontview.net/en/index.htm). Please check the website if you want to publish the icons. <br>
+"[resources/icons/](/resources/icons)"中的列车车型图标下载自[Train Front View](http://www.trainfrontview.net)（或经过少许修改）。图标的版权归属于[Train Front View](http://www.trainfrontview.net)。如果要发布包含图标的视频，请先看这个网站上的要求。
