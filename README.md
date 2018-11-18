@@ -17,7 +17,7 @@
 手动读取定位点坐标并将车站信息和定位点坐标填入"[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"。
 3. **采集时刻表数据**<br>
 首先，准备时刻表数据文件（包括列车数据和停站/经由点数据）。格式参照 "[schedule_data/schedule_data_final_down.csv](/schedule_data/schedule_data_final_down.csv)" 。数据说明如下。<br>
-   ```
+   ```javascript
    // info of a one-way train (单程车次信息)
    TRAIN = _params[0];                        // "TRAIN"
    trainName = _params[1];                    // train name shown on icon (图标上显示的车次或种别) e.g.: "G7302"
