@@ -17,23 +17,23 @@ Read the position (x, y) of each locating point manually (use mspaint), and fill
 3. **Get the schedule data 采集时刻表数据**<br>
 The first step is to prepare the schedule files, which includes all information of the trains (train name, destination, train class, train model icon...) and information of the stops of each train (arrival time, departure time, station name, track...). Refer to "[schedule_data/schedule_data_final_down.csv](/schedule_data/schedule_data_final_down.csv)" for the format of the schedule data file. All necessary data is listed below.<br>
 首先，准备时刻表数据文件（包括列车数据和停站/经由点数据）。格式参照 "[schedule_data/schedule_data_final_down.csv](/schedule_data/schedule_data_final_down.csv)" 。数据说明如下。<br>
-```
-// info of a one-way train (单程车次信息)
-TRAIN = _params[0];                        // "TRAIN"
-trainName = _params[1];                    // train name shown on icon (图标上显示的车次或种别) e.g.: "G7302"
-destination = _params[2];                  // destination shown on icon (图标上显示的目的地) e.g.: "上海虹桥"
-iconId = _params[3];                       // id of icon (车型图标ID) e.g.: "crh380a"
-classColor = ColorType[_params[4]];        // color of train class (种别标识色) e.g.: "BLUE"
-destinationColor = ColorType[_params[5]];  // color of destination type (目的地种类标识色) e.g.: "PURPLE"
-// info of a waypoint (经由点信息)
-type = WaypointType[_params[0]];           // waypoint type (经由点类型) e.g.: "STOP"
-arrTime = _params[1];                      // arrival time or pass time (到站时间或通过时间) e.g.: "8:00"
-depTime = _params[2];                      // departure time (发车时间) e.g.: "8:03"
-stationId = stationNameToId[_params[3]];   // id of the station (车站ID) e.g.: "HZD1"
-trackId = _params[4];                      // id of the track (停车股道ID) e.g.: "1"
-inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
-outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
-```
+   ```
+   // info of a one-way train (单程车次信息)
+   TRAIN = _params[0];                        // "TRAIN"
+   trainName = _params[1];                    // train name shown on icon (图标上显示的车次或种别) e.g.: "G7302"
+   destination = _params[2];                  // destination shown on icon (图标上显示的目的地) e.g.: "上海虹桥"
+   iconId = _params[3];                       // id of icon (车型图标ID) e.g.: "crh380a"
+   classColor = ColorType[_params[4]];        // color of train class (种别标识色) e.g.: "BLUE"
+   destinationColor = ColorType[_params[5]];  // color of destination type (目的地种类标识色) e.g.: "PURPLE"
+   // info of a waypoint (经由点信息)
+   type = WaypointType[_params[0]];           // waypoint type (经由点类型) e.g.: "STOP"
+   arrTime = _params[1];                      // arrival time or pass time (到站时间或通过时间) e.g.: "8:00"
+   depTime = _params[2];                      // departure time (发车时间) e.g.: "8:03"
+   stationId = stationNameToId[_params[3]];   // id of the station (车站ID) e.g.: "HZD1"
+   trackId = _params[4];                      // id of the track (停车股道ID) e.g.: "1"
+   inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
+   outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
+   ```
 **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.<br>
 如果是制作中国国铁的运行略图，可以使用"schedule_data/[query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
 4. **Modify the schedule data manually 手动整理修改时刻表信息**<br>
