@@ -2,9 +2,10 @@
 Automatic train animation generator
 
 ## Introduction
-This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) here is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
+This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
 
-This is a Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0)<br>
+Here is a Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0)<br>
+
 This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.<br>
 
 ## How To Make a train animation <br>
@@ -33,7 +34,7 @@ The first step is to prepare the schedule files, which includes all information 
    inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
    outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
    ```
-   **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.<br>
+   **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.**<br>
 4. **Modify the schedule data manually **<br>
 The data got by query_schedule_12306.py does not include some information such as track, train model type... These information can only be added manually. Some necessary modification is listed below.<br>
     * Add way points (where the line turns, or the end point at the edge of the map).
