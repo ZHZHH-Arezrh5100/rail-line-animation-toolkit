@@ -1,0 +1,2 @@
+The train icons in this folder is downloaded from [Train Front View](http://www.trainfrontview.net/en/index.htm) (or with some minor changes). The copyright of the icons are owned by [Train Front View](http://www.trainfrontview.net/en/index.htm). Please check the website if you want to publish the video with the icons. 
+本文件夹中的列车车型图标下载自[Train Front View](http://www.trainfrontview.net)（或经过少许修改）。图标的版权归属于[Train Front View](http://www.trainfrontview.net)。如果要发布包含图标的视频，请先看这个网站上的要求。
