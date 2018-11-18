@@ -34,7 +34,7 @@
    inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
    outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
    ```
-   **如果是制作中国国铁的运行略图，可以使用"schedule_data/[query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
+   **如果是制作中国国铁的运行略图，可以使用"[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
 4. **手动整理修改时刻表信息**<br>
 自动采集的时刻表数据不包含停车股道、车型等信息，需要手动添加。一些必要的修改步骤如下。<br>
     * 添加经由点和端点。
@@ -48,8 +48,8 @@
 5. **生成视频**<br>
 用AE打开"[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)"，运行脚本"[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"以生成视频。
 
-## File Description <br>文件说明
+## 文件说明
 
-## Notice <br>注意
+## 注意
 * 使用脚本前先看代码，可能要根据需要做一些更改。
 * "[resources/icons/](/resources/icons)"中的列车车型图标下载自[Train Front View](http://www.trainfrontview.net)（或经过少许修改）。图标的版权归属于[Train Front View](http://www.trainfrontview.net)。如果要发布包含图标的视频，请先看这个网站上的要求。
