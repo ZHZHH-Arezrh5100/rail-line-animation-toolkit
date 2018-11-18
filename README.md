@@ -34,8 +34,8 @@ The first step is to prepare the schedule files, which includes all information 
    inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
    outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
    ```
-**If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.<br>
-如果是制作中国国铁的运行略图，可以使用"schedule_data/[query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
+   **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.<br>
+   如果是制作中国国铁的运行略图，可以使用"schedule_data/[query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
 4. **Modify the schedule data manually 手动整理修改时刻表信息**<br>
 The data got by query_schedule_12306.py does not include some information such as track, train model type... These information can only be added manually. Some necessary modification is listed below.<br>
 自动采集的时刻表数据不包含停车股道、车型等信息，需要手动添加。一些必要的修改步骤如下。<br>
