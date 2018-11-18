@@ -1,5 +1,6 @@
 # Rail Line Animation Toolkits
 Automatic train animation generator
+（[中文版README](/README.md)）
 
 ## Introduction
 This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
