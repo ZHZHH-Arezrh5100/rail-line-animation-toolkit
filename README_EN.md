@@ -1,12 +1,12 @@
 # Rail Line Animation Toolkits
-Automatic train animation generator
+Automatic train animation generator<br>
 （[中文版README](/README.md)）
 
 ## Introduction
 This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
 
+<br>
 Here is a Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0)<br>
-
 This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.<br>
 
 ## How To Make a train animation <br>
@@ -18,7 +18,7 @@ The locating points is the key position of the trains. Refer to "[script/locatin
 Read the position (x, y) of each locating point manually (use mspaint), and fill all station data and position data into "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"<br>
 3. **Get the schedule data**<br>
 The first step is to prepare the schedule files, which includes all information of the trains (train name, destination, train class, train model icon...) and information of the stops of each train (arrival time, departure time, station name, track...). Refer to "[schedule_data/schedule_data_final_down.csv](/schedule_data/schedule_data_final_down.csv)" for the format of the schedule data file. All necessary data is listed below.<br>
-   ```
+   ```javascript
    // info of a one-way train (单程车次信息)
    TRAIN = _params[0];                        // "TRAIN"
    trainName = _params[1];                    // train name shown on icon (图标上显示的车次或种别) e.g.: "G7302"
@@ -48,7 +48,6 @@ The data got by query_schedule_12306.py does not include some information such a
     * Modify the destination type if necessary.<br>
 5. **Generate the video**<br>
 Open "[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)" in After Effects, add the background map, and run "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)" to generate the video.<br>
-
 ## File Description <br>
 
 ## Notice <br>
