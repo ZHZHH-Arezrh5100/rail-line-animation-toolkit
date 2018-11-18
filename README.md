@@ -1,12 +1,12 @@
 # 铁路运行略图生成工具
 铁路运行略图自动生成工具<br>
-([README in English] (/README_EN.md))
+([README in English](/README_EN.md))
 
 ## 简介
 本工具用于制作铁路/轨道交通运行略图。运行略图是一种展现列车以图标的形式，按照时刻表，在线路简图上动态运行的视频。运行略图的截图如下图所示。<br>
 
 动态运行略图视频可以参照视频：[（尚未上传）av00000000](https://www.bilibili.com/video/av0)<br>
-本工具提供了使用Adobe After Effects CC自动生成这种运行略图动画的脚本。脚本运行所需的时刻数据可以用Python脚本从12306上获取。<br>
+本工具提供了在Adobe After Effects CC中可以自动生成这种运行略图动画的脚本。脚本运行所需的时刻数据可以用Python脚本从12306上获取。<br>
 
 ## 如何使用本工具制作运行略图
 
