@@ -34,7 +34,7 @@
    inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
    outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
    ```
-   **如果是制作中国国铁的运行略图，可以使用"[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
+   **如果是制作中国国铁的运行略图，可以使用"[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)"从12306自动收集数据。可以添加两个车站之间的所有列车（输入两站的电报码，电报码可以到moerail.ml网站查询），也可以输入车次一个一个添加。** <br>
 4. **手动整理修改时刻表信息**<br>
 自动采集的时刻表数据不包含停车股道、车型等信息，需要手动添加。一些必要的修改步骤如下。<br>
     * 添加经由点和端点。
