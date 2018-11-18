@@ -1,21 +1,20 @@
 # Rail Line Animation Toolkits
 Automatic train animation generator<br>
-（[中文版README](/README.md)）
+（[中文版README](/README.md)）<br><br>
 
 ## Introduction
 This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
 
 <br>
-Here is a Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0)<br>
-This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.<br>
+Here is a Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0) <br>
+**This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.**<br><br>
 
 ## How To Make a train animation <br>
-
 1. **Draw a railway line map**<br>
-Use Visio or other software to draw a background map, like "[resources/bkgd_map.bmp](/resources/bkgd_map.bmp)" or "[resources/bkgd_map.vsdx](/resources/bkgd_map.vsdx)".<br>
+Use Visio or other software to draw a background map, like "[resources/bkgd_map.bmp](/resources/bkgd_map.bmp)" or "[resources/bkgd_map.vsdx](/resources/bkgd_map.vsdx)".<br><br>
 2. **Read and fill in the position of locating points**<br>
 The locating points is the key position of the trains. Refer to "[script/locating_points_reference.bmp](/script/locating_points_reference.bmp)" and "[script/stationId_trackId_reference.bmp](/script/stationId_trackId_reference.bmp)".<br>
-Read the position (x, y) of each locating point manually (use mspaint), and fill all station data and position data into "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"<br>
+Read the position (x, y) of each locating point manually (use mspaint), and fill all station data and position data into "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)"<br><br>
 3. **Get the schedule data**<br>
 The first step is to prepare the schedule files, which includes all information of the trains (train name, destination, train class, train model icon...) and information of the stops of each train (arrival time, departure time, station name, track...). Refer to "[schedule_data/schedule_data_final_down.csv](/schedule_data/schedule_data_final_down.csv)" for the format of the schedule data file. All necessary data is listed below.<br>
    ```javascript
@@ -35,7 +34,7 @@ The first step is to prepare the schedule files, which includes all information 
    inDirection = _params[5];                  // direction of arrival (进站方向) U/D e.g.: "U"
    outDirection = _params[6];                 // direction of departure (出站方向) U/D e.g.: "U"
    ```
-   **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.**<br>
+   **If the train schedule you need is on 12306 (China Railway), use "[schedule_data/query_schedule_12306.py](/schedule_data/query_schedule_12306.py)" to collect data from 12306.cn automatically. You can add all trains between two stations by input the station code of "from" and "to" station, or add trains by train name (train code) one by one.**<br><br>
 4. **Modify the schedule data manually**<br>
 The data got by query_schedule_12306.py does not include some information such as track, train model type... These information can only be added manually. Some necessary modification is listed below.<br>
     * Add way points (where the line turns, or the end point at the edge of the map).
@@ -45,11 +44,11 @@ The data got by query_schedule_12306.py does not include some information such a
     * Add the time of passing a station if necessary.
     * Check and modify the train model of each trains.
       * For trains of China Railway, use "[schedule_data/query_train_models.py](/schedule_data/query_train_models.py)" to query the vehicle models from moerail.ml, and modify the train icons in the schedule data files.
-    * Modify the destination type if necessary.<br>
+    * Modify the destination type if necessary.<br><br>
 5. **Generate the video**<br>
-Open "[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)" in After Effects, add the background map, and run "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)" to generate the video.<br>
+Open "[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)" in After Effects, add the background map, and run "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)" to generate the video.<br><br>
 ## File Description <br>
-
+<br>
 ## Notice <br>
 * Read the script code before using it. Some minor changes might be necessary for other railway lines. <br>
 * The train icons in "[resources/icons/](/resources/icons)" is downloaded from [Train Front View](http://www.trainfrontview.net/en/index.htm) (or with some minor changes). The copyright of the icons are owned by [Train Front View](http://www.trainfrontview.net/en/index.htm). Please check the website if you want to publish the video with the icons. <br>
