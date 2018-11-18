@@ -3,12 +3,12 @@ Automatic train animation generator<br>
 （[中文版README](/README.md)）<br>
 
 ## Introduction
-This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a Rail Line Animation is shown below.<br>
-
-Here is a Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0) <br>
+This is a toolkit for making Rail Line Animation of railway/metro. The Rail Line Animation (or train animation) is a kind of video in which trains is shown as icons moving on the railway map according to the schedule. The capture of a sample Rail Line Animation is shown below.<br>
+![capture of a sample Rail Line Animation](/capture_sample.jpg)
+Here is a sample Rail Line Animation video: [(Not uploaded yet) av00000000](https://www.bilibili.com/video/av0) <br>
 **This toolkit provides a script for generating Rail Line Animation in Adobe After Effects CC. The data for the script can be queried from 12306.cn by Python.**<br>
 
-## How To Make a train animation <br>
+## How To Make a Train Animation <br>
 1. **Draw a railway line map**<br>
 Use Visio or other software to draw a background map, like "[resources/bkgd_map.bmp](/resources/bkgd_map.bmp)" or "[resources/bkgd_map.vsdx](/resources/bkgd_map.vsdx)".<br><br>
 2. **Read and fill in the position of locating points**<br>
@@ -46,7 +46,6 @@ The data got by query_schedule_12306.py does not include some information such a
     * Modify the destination type if necessary.<br><br>
 5. **Generate the video**<br>
 Open "[AE_project_empty_templete.aep](/AE_project_empty_templete.aep)" in After Effects, add the background map, and run "[script/train_animation_generator.jsx](/script/train_animation_generator.jsx)" to generate the video.<br><br>
-## File Description <br>
 
 ## Notice <br>
 * Read the script code before using it. Some minor changes might be necessary for other railway lines. <br>
