@@ -186,7 +186,7 @@ def query_trains_between(from_station_code='BJP', to_station_code='SHH', train_c
 
     # search trains information by two station code (根据两站编号查两站间车次信息)
     # query JSON data from 12306 (下载JSON数据)
-    url_train = r'https://kyfw.12306.cn/otn/leftTicket/query'  # the url may be changed, check the latest on 12306.cn
+    url_train = r'https://kyfw.12306.cn/otn/leftTicket/queryZ'  # the url may be changed, check the latest on 12306.cn
     parameter_dict = {'leftTicketDTO.train_date': (datetime.date.today() + datetime.timedelta(days=1)).strftime(
         '%Y-%m-%d') if date is None else date,
                       'leftTicketDTO.from_station': from_station_code,
